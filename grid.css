@@ -1,0 +1,91 @@
+.sadrzaj{
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         "sidebar_left content content content sidebar_right"
+                         "sidebar_left content content content sidebar_right"  
+                          "sidebar_left content content content sidebar_right"
+                          "footer footer footer footer footer"; 
+grid-gap: 10px; 
+background-color: #2196F3;  
+padding: 10px;
+align-items: stretch;
+
+} 
+.sadrzaj > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.header{
+    grid-area: header;
+    animation-name: primjer;
+    animation-duration: 4s;
+}
+.sidebar_left{
+    grid-area: sidebar_left;
+}
+.sidebar_right{
+    grid-area: sidebar_right;
+}
+.content{
+    grid-area: content;
+}
+.footer{
+    grid-area: footer;
+}
+@keyframes primjer{
+    from{ background-color: rgba(255, 255, 255, 0.8);}
+    to{background-color: blue;}
+
+}
+
+
+@media (max-width: 600px) {
+
+
+    .sadrzaj{
+    display: grid;
+    grid-template-areas: "header header header header header"
+                         "sidebar_left sidebar_left sidebar_left sidebar_left sidebar_left"
+                         "sidebar_right sidebar_right sidebar_right sidebar_right sidebar_right "  
+                          "content content content content content"
+                          "footer footer footer footer footer"; 
+grid-gap: 10px; 
+background-color: #2196F3;  
+padding: 10px;
+align-items: stretch;
+
+} 
+.sadrzaj > div{
+    background-color: rgba(255, 255, 255, 0.8);
+    text-align: center;
+    padding: 20px 0;
+    font-size: 20px;
+}
+.header{
+    grid-area: header;
+    animation-name: primjer;
+    animation-duration: 4s;
+}
+.sidebar_left{
+    grid-area: sidebar_left;
+}
+.sidebar_right{
+    grid-area: sidebar_right;
+}
+.content{
+    grid-area: content;
+}
+.footer{
+    grid-area: footer;
+}
+@keyframes primjer{
+    from{ background-color: rgba(255, 255, 255, 0.8);}
+    to{background-color: blue;}
+
+}
+   
+ 
+
+}
